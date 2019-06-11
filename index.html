@@ -2,17 +2,24 @@
 <html>
 <head>
 <script src="https://app.ohmnilabs.com/api/Ohmni.js"></script>
-<script>function setURL(url){
-             Ohmni.showPageOnBot(url)
-                      }
+<script>
+ 
+  function setURL(url){
+             Ohmni.showPageOnBot(url);
+         }
+  
+  function say() { 
+             Ohmni.setURL('https://qq.com');
+         }
+   
+  function try() { 
+             Ohmni.move(500,500,1000);
+         }   
+  
 </script>   
 </head>
 <body>
-<button onclick="say()" data-external="true" style="height:100px; width:100px;">咋回事啊</button><br><script> function say() { 
-Ohmni.setURL('https://qq.com');
-} </script>     
-<button onclick="try()" data-external="true" style="height:100px; width:100px;">咋整啊啊</button><script> function try() { 
-Ohmni.move(500,500,1000);
-} </script> 
- </body>  
+<button onclick="say()" data-external="true" style="height:100px; width:100px;">咋回事啊</button><br>    
+<button onclick="try()" data-external="true" style="height:100px; width:100px;">咋整啊啊2222</button>
+</body>  
 </html>
